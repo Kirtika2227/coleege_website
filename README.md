@@ -1,1 +1,1 @@
-# coleege_website
+# college_website

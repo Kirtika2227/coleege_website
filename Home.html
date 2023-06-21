@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" conent="width=device-width,initial-scale = 1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        color: black;
+      }
+      body {
+        margin: 0;
+      }
+      /*Style the header */
+      .header {
+        background-color: rgb(193, 193, 233);
+        padding: 20px;
+        text-align: center;
+      }
+
+      /*Create three equal columns that flaots next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+      }
+      /*clear floats after column */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>THAKUR COLLEGE OF ENGINEERING</h1>
+      <img src="college photo" alt="College Image" style="height: 300;width: 700;">
+
+
+    </div>
+</body>
+
+
+
+    <div class="row">
+      <div class="column">
+
+
+        <h2>Vision</h2>
+        <p>
+          "Thakur College of Engineering and Technology will excel in Technical
+          Education to become an internationally renowned premier Institute of
+          Engineering and Technology"
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Achievemnts</h2>
+        <p>
+          Our college has been recognized for its exceptional research contributions, prestigious rankings, 
+          and awards, showcasing our commitment to academic excellence and innovation.
+          With a strong focus on student success, we provide extensive internship opportunities, 
+          foster community engagement, and boast a diverse and inclusive campus environment, empowering our graduates to excel in their chosen fields
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Key Features </h2>
+        <p>
+          Explore our comprehensive range of academic programs, including STEM disciplines, arts and humanities, business, and healthcare, providing students with diverse learning opportunities.
+          Benefit from our robust career services, internship placements, and alumni network, ensuring a seamless transition from education to successful professional pathways.
+        </p>
+      </div>
+  </body>
+</html>

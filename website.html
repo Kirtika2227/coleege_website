@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" conent="width=device-width,initial-scale = 1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        color: black;
+      }
+      body {
+        margin: 0;
+      }
+      /*Style the header */
+      .header {
+        background-color: rgb(193, 193, 233);
+        padding: 20px;
+        text-align: center;
+      }
+      /*Style the navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(78, 78, 141);
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: lavenderblush;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .topnav a:hover {
+        background-color: lightsteelblue;
+        color: black;
+      }
+      /*Style the footer*/
+      .footer {
+        background-color: rgb(193, 193, 233);
+        padding: 10px;
+        text-align: center;
+      }
+      /*Create three equal columns that flaots next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+      }
+      /*clear floats after column */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>THAKUR COLLEGE OF ENGINEERING</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="Home.html" class="button"> HOME </a>
+      <a href="Academic.html" class="button"> ACADEMIC </a>
+      <a href="#"> ADMISSION </a>
+      <a href="Erp.html" class="button"> ERP </a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Vision</h2>
+        <p>
+          "Thakur College of Engineering and Technology will excel in Technical
+          Education to become an internationally renowned premier Institute of
+          Engineering and Technology"
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Mission</h2>
+        <p>
+          "To provide state-of-the-art infrastructure and right academic
+          ambience for developing professional skills as well as an environment
+          for growth of leadership and managerial skills to students which will
+          make them competent engineers to deliver quality results in industry"
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Beliefs</h2>
+        <p>
+          "Education is the manifestation of perfection already existing in
+          man."
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Address: Thakur College of Engineering and Technology , Samata Nagar ,
+        Kandivali-(E)
+      </p>
+      <p>Contact:221-1345666</p>
+      <p>Email : thakurcollege@gmail.com</p>
+      <p>Created by : kirtika</p>
+    </div>
+  </body>
+</html>
